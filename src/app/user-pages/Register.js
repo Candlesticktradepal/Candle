@@ -133,7 +133,7 @@ const Register = () => {
     else {
       var arr = { fName, lName, eMail, cOuntry, username, pAss, cPass, pHone };
       axios
-        .post("http://144.76.105.15/api/users/register", arr)
+        .post("http://144.76.105.15:5001/api/users/register", arr)
         .then((res) => {
           console.log(res.data);
           if (res.data === "UserEmail already exists!" || res.data === "UserName already exists!")
